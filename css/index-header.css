@@ -1,0 +1,72 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d6a96;
+    color: white;
+    padding-top: 8px;
+}
+
+.logo>img {
+    height: 50px;
+}
+
+.opcao-moradia-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.opcao-moradia {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: fit-content;
+}
+
+.opcao-moradia:not(:last-child) {
+    margin-right: 20px;
+}
+
+.opcao-moradia input {
+    display: none;
+}
+
+.opcao-moradia label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 13px;
+    border-bottom: 4px solid transparent;
+
+    transition: border-bottom .3s;
+}
+
+.opcao-moradia label>img {
+    height: 50px;
+    border-radius: 13px;
+    margin-right: 18px;
+}
+
+.opcao-moradia input:checked + label {
+    border-bottom: 4px solid #a09b6b;
+}
+
+.opcoes-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opcoes-usuario>.item {
+    margin-right: 21px;
+}
+
+.info-contato {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: #1d6a96;
+}
