@@ -58,6 +58,7 @@ span.favorite {
 
 .heart-container .heart {
     position: absolute;
+    z-index: 0;
     top: 5px;
     right: 0;
     scale: 1.5;

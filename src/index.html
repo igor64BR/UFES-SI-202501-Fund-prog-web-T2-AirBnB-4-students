@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="css/index/header.css">
         <link rel="stylesheet" href="css/index/main.css">
         <link rel="stylesheet" href="css/index/footer.css">
-
-        <script src="js/index/index.js"></script>
     </head>
     <body>
         <header>
@@ -18,34 +16,7 @@
                 <img src="assets/img/logo-low-res.jpg" alt="Logo">
             </div>
             <nav>
-                <div class="opcao-moradia-container">
-                    <div class="opcao-moradia">
-                        <input id="apartamento" name="opcao-moradia"
-                            value="apartamento" type="radio"
-                            checked>
-                        <label for="apartamento">
-                            <img src="assets/img/apartamento.jpg"
-                                alt="apartamento">
-                            <span>Apartamentos</span>
-                        </label>
-                    </div>
-                    <div class="opcao-moradia">
-                        <input id="casa" name="opcao-moradia" value="casa"
-                            type="radio">
-                        <label for="casa">
-                            <img src="assets/img/casa.png" alt="apartamento">
-                            <span>Casas</span>
-                        </label>
-                    </div>
-                    <div class="opcao-moradia">
-                        <input id="republica" name="opcao-moradia"
-                            value="republica"
-                            type="radio">
-                        <label for="republica">
-                            <img src="assets/img/sitio.jpg" alt="apartamento">
-                            <span>Repúblicas</span>
-                        </label>
-                    </div>
+                <div id="filtro-opcao-moradia" class="opcao-moradia-container">
                 </div>
             </nav>
             <div class="opcoes-usuario">
@@ -88,4 +59,7 @@
             </p>
         </footer>
     </body>
+
+    <script src="js/index/filter-options.js"></script>
+    <script src="js/index/fetch-lists.js"></script>
 </html>
