@@ -29,16 +29,50 @@ main {
     margin: 0;
 }
 
-.anuncio img {
-    border-radius: 21px;
+.anuncio-imagem {
     height: 200px;
+    width: 200px;
+    border-radius: 21px;
+
+    padding: 21px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-size: cover;
+}
+
+span.favorite {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, .5);
+    height: fit-content;
+    color: black;
+    font-weight: 600;
+}
+
+.heart-container {
+    position: relative;
+}
+
+.heart-container .heart {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    scale: 1.5;
+    transition: scale .2s;
+}
+
+.heart-container:hover .heart {
+    scale: 2;
+}
+
+.heart-container .heart-outline {
+    color: white;
 }
 
 .anuncio p {
     text-transform: capitalize;
     font-weight: bold;
-}
-
-.anuncio span {
-    color: gray;
 }

@@ -3,7 +3,7 @@
         {
             "bairro": "Guararema",
             "aluguel": 1200,
-            "avaliacao": 4.5,
+            "avaliacao": 4.4,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
             "imagem": "assets/img/casa.png"
