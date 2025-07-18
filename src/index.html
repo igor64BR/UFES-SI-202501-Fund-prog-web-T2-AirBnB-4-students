@@ -4,8 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/index-header.css">
+
+        <link rel="stylesheet" href="css/index/index.css">
+        <link rel="stylesheet" href="css/index/header.css">
+        <link rel="stylesheet" href="css/index/main.css">
+        <link rel="stylesheet" href="css/index/footer.css">
+
+        <script src="js/index/index.js"></script>
     </head>
     <body>
         <header>
@@ -56,5 +61,31 @@
                 </div>
             </div>
         </header>
+        <main>
+            <section class="recomendacao-moradia">
+                <h2>Melhores Avaliações</h2>
+                <!-- Filled by js/index-rec-aval.js -->
+                <div id="melhores-avaliacoes" class="anuncio-container"></div>
+            </section>
+            <hr>
+            <section class="recomendacao-moradia">
+                <h2>Mais próximos da faculdade</h2>
+                <div id="mais-proximos-ufes"></div>
+            </section>
+            <hr>
+            <section class="recomendacao-moradia">
+                <h2>Custo-Benefício</h2>
+                <div id="mais-baratos"></div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Desenvolvido por
+                <span>Igor Baiocco</span>,
+                <span>Daniel José</span>,
+                <span>Gabriel Verner</span>
+                - SI UFES 2025
+            </p>
+        </footer>
     </body>
 </html>

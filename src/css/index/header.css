@@ -5,6 +5,10 @@ header {
     background-color: #1d6a96;
     color: white;
     padding-top: 8px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .logo>img {
