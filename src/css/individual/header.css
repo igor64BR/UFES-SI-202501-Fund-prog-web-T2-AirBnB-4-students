@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d6a96;
+    color: white;
+    padding-top: 8px;
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.opcoes-usuario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#anuncio{
+    color: white;
+    text-decoration: none;
+}
+
+.opcoes-usuario>.item {
+    margin-right: 21px;
+}
+
+.info-contato {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: #1d6a96;
+}
