@@ -4,8 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contato</title>
+
+        <link rel="stylesheet" href="css/contato/index.css">
     </head>
     <body>
-        <h1>Contato</h1>
+        <main class="flex-center">
+            <div class="corpo-cadastro flex-center">
+                <a class="button flex-center go-back" href="index.html">&lt;</a>
+                <h1>Envie um e-mail para nosso time!</h1>
+                <form class="flex-center" method="post"
+                    onsubmit="sendEmail(event)"
+                    enctype="text/plain">
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email"
+                            placeholder="Insira aqui o seu e-mail">
+                    </div>
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" name="assunto" id="assunto"
+                            placeholder="Insira aqui o assunto do contato">
+                    </div>
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem"
+                            placeholder="Digite aqui sua mensagem"></textarea>
+                    </div>
+                    <div class="flex-center button-container">
+                        <button class="button" type="reset">Limpar</button>
+                        <button class="button" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
     </body>
+    <script src="js/contato/index.js"></script>
 </html>
