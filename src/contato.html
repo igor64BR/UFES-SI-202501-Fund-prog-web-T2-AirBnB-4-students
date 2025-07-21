@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +18,22 @@
                     <div>
                         <label for="email">E-mail:</label>
                         <input type="email" name="email" id="email"
-                            placeholder="Insira aqui o seu e-mail">
+                            placeholder="Insira aqui o seu e-mail" required>
                     </div>
                     <div>
                         <label for="assunto">Assunto:</label>
                         <input type="text" name="assunto" id="assunto"
-                            placeholder="Insira aqui o assunto do contato">
+                            placeholder="Insira aqui o assunto do contato"
+                            required>
                     </div>
                     <div>
-                        <label for="mensagem">Mensagem:</label>
+                        <label for="mensagem">
+                            Mensagem:
+                            <span class="sub-label">(Mínimo de 30 letras)</span>
+                        </label>
                         <textarea name="mensagem" id="mensagem"
-                            placeholder="Digite aqui sua mensagem"></textarea>
+                            placeholder="Digite aqui sua mensagem"
+                            required minlength="30"></textarea>
                     </div>
                     <div class="flex-center button-container">
                         <button class="button" type="reset">Limpar</button>
