@@ -40,6 +40,8 @@ main {
     justify-content: space-between;
 
     background-size: cover;
+
+    transition: all .2s ease-in-out;
 }
 
 span.favorite {

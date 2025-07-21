@@ -1,0 +1,10 @@
+@media (max-width: 1000px) {
+    .opcao-moradia>label>span {
+        display: none;
+    }
+
+    .anuncio>.anuncio-imagem {
+        height: 100px;
+        width: 100px;
+    }
+}
