@@ -11,7 +11,7 @@ html, body, main {
 }
 
 body {
-    background-color: rgb(39, 39, 39);
+    background-color: #1d6a96;
 }
 
 .flex-center {
@@ -27,15 +27,15 @@ body {
     border-radius: 3rem;
 
     box-shadow: 
-        3px 3px 21px rgba(0, 0, 0, .8), 
-        -3px -3px 21px rgba(255, 255, 255, .2);
+        3px 3px 15px rgba(0, 0, 0, .5), 
+        -3px -3px 15px rgba(255, 255, 255, .3);
 
     position: relative;
 }
 
 .button {
-    background-color: rgb(47, 47, 47);
-    border: 1px solid rgb(45, 45, 45);
+    background-color: #1d6a96;
+    border: 1px solid #1d6a96;
     border-radius: 5px;
     font-size: 1rem;
     padding: .8rem 3.4rem;
@@ -48,14 +48,14 @@ body {
         inset -.5px -.5px 5px rgba(255, 255, 255, .3);
 
     
-    transition: box-shadow .3s ease-in-out;
+    transition: box-shadow .1s ease-in-out;
 }
 
 .button:not(:last-child) {
     margin-right: 1rem;
 }
 
-.button:hover {
+.button:active {
     box-shadow: 
         0 0 0 rgba(0, 0, 0, .8),
         0 0 0 rgba(255, 255, 255, .3),
