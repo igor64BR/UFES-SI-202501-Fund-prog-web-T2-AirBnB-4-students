@@ -3,23 +3,23 @@ const filters = [
     {
         value: "todos",
         label: "Todos",
-        image: "assets/img/cidade.png",
+        image: "./assets/img/cidade.png",
         default: true
     },
     {
         value: "apartamento",
         label: "Apartamentos",
-        image: "assets/img/apartamento.jpg",
+        image: "./assets/img/apartamento.jpg",
     },
     {
         value: "casa",
         label: "Casas",
-        image: "assets/img/casa.png",
+        image: "./assets/img/casa.png",
     },
     {
         value: "republica",
         label: "Repúblicas",
-        image: "assets/img/sitio.jpg",
+        image: "./assets/img/sitio.jpg",
     }
 ];
 

@@ -72,9 +72,9 @@ const formatAdvertisement = (ad) => {
  * @param {string} filter - The filter to apply.
  */
 const runFilters = (filter) => {
-    fetchJson("__data-mocks/top-avaliados.json", "melhores-avaliacoes", filter);
-    fetchJson("__data-mocks/mais-proximos-ufes.json", "mais-proximos-ufes", filter);
-    fetchJson("__data-mocks/mais-baratos.json", "mais-baratos", filter);
+    fetchJson("./__data-mocks/top-avaliados.json", "melhores-avaliacoes", filter);
+    fetchJson("./__data-mocks/mais-proximos-ufes.json", "mais-proximos-ufes", filter);
+    fetchJson("./__data-mocks/mais-baratos.json", "mais-baratos", filter);
 }
 
 // Initial fetch and filter setup

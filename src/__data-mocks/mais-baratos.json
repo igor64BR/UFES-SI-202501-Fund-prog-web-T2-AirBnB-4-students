@@ -6,7 +6,7 @@
             "avaliacao": 4.4,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "Centro",
@@ -14,7 +14,7 @@
             "avaliacao": 4.8,
             "descricao": "Apartamento moderno, próximo a pontos turísticos e com fácil acesso ao transporte público.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Bilau",
@@ -22,7 +22,7 @@
             "avaliacao": 4.7,
             "descricao": "Cobertura com vista para o mar, perfeita para relaxar e aproveitar a cidade.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Guararema",
@@ -30,7 +30,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         },
         {
             "bairro": "Vila do Sul",
@@ -38,7 +38,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "UFES",
@@ -46,7 +46,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         },
         {
             "bairro": "Guararema",
@@ -54,7 +54,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "Centro",
@@ -62,7 +62,7 @@
             "avaliacao": 4.8,
             "descricao": "Apartamento moderno, próximo a pontos turísticos e com fácil acesso ao transporte público.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Bilau",
@@ -70,7 +70,7 @@
             "avaliacao": 4.7,
             "descricao": "Cobertura com vista para o mar, perfeita para relaxar e aproveitar a cidade.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Guararema",
@@ -78,7 +78,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         },
         {
             "bairro": "Vila do Sul",
@@ -86,7 +86,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "UFES",
@@ -94,7 +94,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         },
         {
             "bairro": "Guararema",
@@ -102,7 +102,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "Centro",
@@ -110,7 +110,7 @@
             "avaliacao": 4.8,
             "descricao": "Apartamento moderno, próximo a pontos turísticos e com fácil acesso ao transporte público.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Bilau",
@@ -118,7 +118,7 @@
             "avaliacao": 4.7,
             "descricao": "Cobertura com vista para o mar, perfeita para relaxar e aproveitar a cidade.",
             "tipo": "apartamento",
-            "imagem": "assets/img/apartamento.jpg"
+            "imagem": "./assets/img/apartamento.jpg"
         },
         {
             "bairro": "Guararema",
@@ -126,7 +126,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         },
         {
             "bairro": "Vila do Sul",
@@ -134,7 +134,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "casa",
-            "imagem": "assets/img/casa.png"
+            "imagem": "./assets/img/casa.png"
         },
         {
             "bairro": "UFES",
@@ -142,7 +142,7 @@
             "avaliacao": 4.5,
             "descricao": "Casa aconchegante e arejada, ideal para quem busca conforto.",
             "tipo": "republica",
-            "imagem": "assets/img/sitio.jpg"
+            "imagem": "./assets/img/sitio.jpg"
         }
     ]
 }
