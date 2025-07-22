@@ -10,10 +10,12 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
+    float: left;
 }
 
 .logo img {
     height: 50px;
+    margin-right: 1300px;
 }
 
 .opcoes-usuario {
@@ -36,6 +38,14 @@ header {
     padding: 8px;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    color: #1d6a96;
+}
+
+.info-noticias {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
     align-items: center;
     color: #1d6a96;
 }
