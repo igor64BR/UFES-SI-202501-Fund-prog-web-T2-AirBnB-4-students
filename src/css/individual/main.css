@@ -1,3 +1,15 @@
 body{
     margin: 0px;
 }
+
+/* .img-republica{
+    width: 10%;
+    height: 10%;
+} */
+
+.imagens-individuais{
+    position: relative;
+    top: 50px;
+    border: 2px solid black;
+    display: inline-block;
+}

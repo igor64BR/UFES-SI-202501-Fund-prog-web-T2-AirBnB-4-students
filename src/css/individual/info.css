@@ -1,5 +1,10 @@
-.sobre{
+.info-individual{
+    display: inline-block;
     text-align: center;
     border: 2px solid #1d6a96;
-    float: right;
+    
+
+    position: relative;
+    top: 50px;
+    left: 50px;
 }
