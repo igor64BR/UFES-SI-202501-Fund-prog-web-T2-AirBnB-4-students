@@ -12,9 +12,8 @@ header {
     z-index: 1;
 }
 
-.logo img {
+.logo>img {
     height: 50px;
-    margin-left: 20px;
 }
 
 .opcao-moradia-container {
@@ -64,11 +63,11 @@ header {
     align-items: center;
 }
 
-.item {
+.opcoes-usuario>.item {
     margin-right: 21px;
 }
 
-.header-badge {
+.info-contato {
     background-color: #fff;
     padding: 8px;
     border-radius: 50%;

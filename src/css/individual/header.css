@@ -29,15 +29,23 @@ header {
     text-decoration: none;
 }
 
-.item {
+.opcoes-usuario>.item {
     margin-right: 21px;
 }
 
-.header-badge {
+.info-contato {
     background-color: #fff;
     padding: 8px;
     border-radius: 50%;
     display: flex;
+    align-items: center;
+    color: #1d6a96;
+}
+
+.info-noticias {
+    background-color: #fff;
+    padding: 8px 8px 8px 8px;
+    border-radius: 50%;
     align-items: center;
     color: #1d6a96;
 }

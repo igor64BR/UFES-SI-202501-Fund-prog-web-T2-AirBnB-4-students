@@ -1,77 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lar Universitário</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lar Universitário</title>
-
-    <link rel="stylesheet" href="./css/globals.css">
-    <link rel="stylesheet" href="./css/listagem/header.css">
-    <link rel="stylesheet" href="./css/listagem/main.css">
-    <link rel="stylesheet" href="./css/listagem/footer.css">
-    <link rel="stylesheet" href="./css/listagem/width-lt-1000px.css">
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <a href="listagem.html" title="Voltar para a página inicial">
-                <img src="assets/img/logo-low-res.jpg" alt="Logo" />
-            </a>
-        </div>
-        <nav>
-            <div id="filtro-opcao-moradia" class="opcao-moradia-container">
+        <link rel="stylesheet" href="./css/listagem/index.css">
+        <link rel="stylesheet" href="./css/listagem/header.css">
+        <link rel="stylesheet" href="./css/listagem/main.css">
+        <link rel="stylesheet" href="./css/listagem/footer.css">
+        <link rel="stylesheet" href="./css/listagem/width-lt-1000px.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="assets/img/logo-low-res.jpg" alt="Logo">
             </div>
-        </nav>
-        <div class="opcoes-usuario">
-            <a href="#" class="item">Anunciar</a>
-            <a class="header-badge item" href="contato.html" title="Link para aba de contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                </svg>
-            </a>
-            <a class="header-badge item" href="noticias.html" title="Link para aba de notícias">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-newspaper" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
-                    <path
-                        d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
-                </svg>
-            </a>
-        </div>
-    </header>
-    <main>
-        <section class="recomendacao-moradia">
-            <h2>Melhores Avaliações</h2>
-            <div id="melhores-avaliacoes" class="anuncio-container"></div>
-        </section>
-        <hr>
-        <section class="recomendacao-moradia">
-            <h2>Mais próximos da faculdade</h2>
-            <div id="mais-proximos-ufes"></div>
-        </section>
-        <hr>
-        <section class="recomendacao-moradia">
-            <h2>Custo-Benefício</h2>
-            <div id="mais-baratos"></div>
-        </section>
-    </main>
-    <footer>
-        <p>
-            Desenvolvido por
-            <span>Igor Baiocco</span>,
-            <span>Daniel José</span>,
-            <span>Gabriel Verner</span>
-            - SI UFES 2025
-        </p>
-    </footer>
-</body>
+            <nav>
+                <div id="filtro-opcao-moradia" class="opcao-moradia-container">
+                </div>
+            </nav>
+            <div class="opcoes-usuario">
+                <a href="#" class="item">Anunciar</a>
+                <a class="info-contato item" href="contato.html"
+                    title="Link para aba de contato">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor"
+                        class="bi bi-chat-left-dots-fill"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <main>
+            <section class="recomendacao-moradia">
+                <h2>Melhores Avaliações</h2>
+                <div id="melhores-avaliacoes" class="anuncio-container"></div>
+            </section>
+            <hr>
+            <section class="recomendacao-moradia">
+                <h2>Mais próximos da faculdade</h2>
+                <div id="mais-proximos-ufes"></div>
+            </section>
+            <hr>
+            <section class="recomendacao-moradia">
+                <h2>Custo-Benefício</h2>
+                <div id="mais-baratos"></div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Desenvolvido por
+                <span>Igor Baiocco</span>,
+                <span>Daniel José</span>,
+                <span>Gabriel Verner</span>
+                - SI UFES 2025
+            </p>
+        </footer>
+    </body>
 
-<script src="./js/listagem/filter-options.js"></script>
-<script src="./js/listagem/fetch-lists.js"></script>
-
+    <script src="./js/listagem/filter-options.js"></script>
+    <script src="./js/listagem/fetch-lists.js"></script>
 </html>
