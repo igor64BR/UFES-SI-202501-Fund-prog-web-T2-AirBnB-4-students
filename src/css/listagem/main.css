@@ -64,12 +64,11 @@ span.favorite {
     top: 5px;
     right: 0;
     scale: 1.5;
-    transition: 0.2s ease-in-out;
+    transition: scale .2s;
 }
 
 .heart-container:hover .heart {
     scale: 2;
-    filter: drop-shadow(0 0 2px rgba(0, 0, 0, .2));
 }
 
 .heart-container .heart-outline {
