@@ -1,11 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-html, body {
-    font-family: "Roboto", sans-serif;
+body {
+    width: 100vw;
+    height: 100vw;
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+@keyframes animation1 {
+    0% {
+        transform: rotateX(0);
+    }
+
+    100% {
+        transform: rotatex(90deg);
+    }
+}
+@keyframes animation2 {
+    0% {
+        transform: rotateX(-90deg);
+    }
+
+    100% {
+        transform: rotatex(0deg);
+    }
+}
+
+.rotating-text {
+    position: absolute;
+    display: inline;
+}
+
+#rot-text-1 {
+    animation: animation1 1s both;
+}
+
+#rot-text-2 {
+    animation: animation2 1s 1s both;
 }
