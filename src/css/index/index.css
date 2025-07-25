@@ -23,11 +23,6 @@ body {
     align-items: center;
 }
 
-.container a {
-    border: 1px solid white;
-    border-radius: 15px;
-}
-
 .container h1 {
     margin: 0;
 }
@@ -39,3 +34,13 @@ body {
     justify-content: space-evenly;
     font-weight: bold;
 }
+
+/* #enter-site-btn {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 10px 50px;
+} */
