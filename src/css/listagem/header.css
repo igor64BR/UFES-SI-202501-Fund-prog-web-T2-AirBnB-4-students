@@ -14,6 +14,7 @@ header {
 
 .logo>img {
     height: 50px;
+    margin-left: 20px;
 }
 
 .opcao-moradia-container {
@@ -32,11 +33,7 @@ header {
     margin-right: 20px;
 }
 
-.opcao-moradia input {
-    display: none;
-}
-
-.opcao-moradia label {
+.opcao-moradia a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -47,14 +44,10 @@ header {
     transition: border-bottom .3s;
 }
 
-.opcao-moradia label>img {
+.opcao-moradia img {
     height: 50px;
     border-radius: 13px;
     margin-right: 18px;
-}
-
-.opcao-moradia input:checked + label {
-    border-bottom: 4px solid #a09b6b;
 }
 
 .opcoes-usuario {
