@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "Roboto", sans-serif;
 }
 
 #anuncio{
@@ -42,10 +43,11 @@ header {
     color: #1d6a96;
 }
 
-.info-noticias {
+.badge-circular {
     background-color: #fff;
-    padding: 8px 8px 8px 8px;
+    padding: 8px;
     border-radius: 50%;
+    display: flex;
     align-items: center;
     color: #1d6a96;
 }

@@ -1,5 +1,5 @@
 .info-individual{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
 
     float: right;
     border: 2px solid #1d6a96;
@@ -7,7 +7,7 @@
     background-color: #f0f6fe;
 
     position: relative;
-    top: -330px;
+    top: -350px;
     left: -60px;
     padding: 10px;
 }
@@ -16,6 +16,12 @@
     text-align: center;
     color: #1d6a96;
     font-size: 30px;
+}
+
+.info-individual h1 span{
+    font-size: 20px;
+    color: #237caf;
+    padding-left: 5%;
 }
 
 .info-individual h3{
@@ -42,9 +48,18 @@
     border-radius: 3px; */
     width: 85%;
     text-align: center;
-    margin-bottom: 12%;
+    margin-bottom: 10%;
 }
 
 iframe{
     text-align: center;
+}
+
+.tel {
+    margin-bottom: 10%;
+}
+
+.tel span {
+    color: #1d6a96;
+    font-style: italic;
 }
