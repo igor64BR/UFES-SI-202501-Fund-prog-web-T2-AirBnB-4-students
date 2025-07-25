@@ -20,18 +20,18 @@ a {
     border-radius: 2rem;
     box-shadow: 
         1px 1px 5px rgba(0, 0, 0, .5),
-        -.5px -.5px 5px rgba(255, 255, 255, .2),
+        -1px -1px 5px #2a9cdd,
         inset 1px 1px 5px rgba(0, 0, 0, .8),
-        inset -.5px -.5px 5px rgba(255, 255, 255, .3);
+        inset -1px -1px 5px #2a9cdd;
 
     
-    transition: box-shadow .1s ease-in-out;
+    transition: .1s ease-in-out;
 }
 
 .button:active {
     box-shadow: 
         0 0 0 rgba(0, 0, 0, .8),
-        0 0 0 rgba(255, 255, 255, .3),
+        .5px .5px 13px #2a9bdd93,
         inset 2px 2px 8px rgba(0, 0, 0, .8),
-        inset -1px -1px 8px rgba(255, 255, 255, .3);
+        inset -2px -2px 8px #2a9cdd;
 }
