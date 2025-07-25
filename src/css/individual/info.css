@@ -1,11 +1,50 @@
 .info-individual{
-    display: inline-block;
-    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    float: right;
     border: 2px solid #1d6a96;
-    
+    border-radius: 2%;
+    background-color: #f0f6fe;
 
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: -330px;
+    left: -60px;
     padding: 10px;
+}
+
+.info-individual h1{
+    text-align: center;
+    color: #1d6a96;
+    font-size: 30px;
+}
+
+.info-individual h3{
+    display: inline;
+    color: #237caf;
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+.valor{
+    text-align: left;
+    margin-top: 2px;
+}
+
+.distancia{
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 3px;
+}
+
+.custos{
+    /* border: 1px solid #1d6a96;
+    border-radius: 3px; */
+    width: 85%;
+    text-align: center;
+    margin-bottom: 12%;
+}
+
+iframe{
+    text-align: center;
 }
