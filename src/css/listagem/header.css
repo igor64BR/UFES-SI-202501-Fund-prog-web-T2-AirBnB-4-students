@@ -56,15 +56,6 @@ header {
     align-items: center;
 }
 
-.opcoes-usuario>.item {
+.item {
     margin-right: 21px;
-}
-
-.info-contato {
-    background-color: #fff;
-    padding: 8px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    color: #1d6a96;
 }

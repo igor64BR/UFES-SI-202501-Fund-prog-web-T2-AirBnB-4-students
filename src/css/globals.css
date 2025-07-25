@@ -35,3 +35,12 @@ a {
         inset 2px 2px 8px rgba(0, 0, 0, .8),
         inset -2px -2px 8px #2a9cdd;
 }
+
+.badge-circular {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: #1d6a96;
+}
