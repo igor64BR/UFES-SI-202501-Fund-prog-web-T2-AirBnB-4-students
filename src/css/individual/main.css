@@ -9,9 +9,10 @@ body {
 }
 
 body > h1 {
-    margin: 80px 0 0 30px;
+    margin: 60px 0 0 30px;
     color: #237caf;
-    font-size: 50px;
+    font-size: 40px;
+    text-align: center;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
     align-items: center;
 
     width: 100%;
-    margin-top: 50px;
+    margin-top: 30px;
 
     box-sizing: border-box;
 }
@@ -35,6 +36,7 @@ main > div {
     justify-content: space-between;
     flex: 1;
     margin-left: 30px;
+    text-align: center;
 }
 
 .show-img {
@@ -56,6 +58,13 @@ main > div {
 }
 
 .img-republica {
-    height: 90%;
+    height: 70%;
     border-radius: 10px;
+}
+
+img:active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.3); 
 }
