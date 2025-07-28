@@ -1,57 +1,57 @@
-.info-individual{
-    border: 2px solid #1d6a96;
-    border-radius: 2%;
-    background-color: #f0f6fe;
-    
-    width: 450px;
-    padding: 20px 30px;
-    box-sizing: border-box;
+.info-individual {
+  border: 2px solid #1d6a96;
+  border-radius: 2%;
+  background-color: #f0f6fe;
 
-    display: flex;
-    flex-direction: column;
+  width: 450px;
+  padding: 20px 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.info-individual h3{
-    color: #237caf;
-    text-align: center;
-    font-size: xx-large;
+.info-individual h3 {
+  color: #237caf;
+  text-align: center;
+  font-size: xx-large;
 }
 
-.custos{
-    width: 100%;
-    text-align: center;
+.custos {
+  width: 100%;
+  text-align: center;
 }
 
-.valor{
-    text-align: left;
-    margin-top: 2px;
+.valor {
+  text-align: left;
+  margin-top: 2px;
 
-    list-style: none;
-    padding: 0;
-    font-size: large;
+  list-style: none;
+  padding: 0;
+  font-size: large;
 }
 
 .tel {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 .tel span {
-    color: #1d6a96;
-    font-style: italic;
-    font-weight: bold;
+  color: #1d6a96;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .mapa {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .mapa iframe {
-    width: 90%;
-    border: none;
+  width: 90%;
+  border: none;
 }
 
-.distancia{
-    text-align: center;
+.distancia {
+  text-align: center;
 }
