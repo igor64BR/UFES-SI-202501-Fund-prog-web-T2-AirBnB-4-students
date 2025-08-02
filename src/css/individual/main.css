@@ -9,7 +9,7 @@ body {
 }
 
 body > h1 {
-  margin: 80px 0 0 30px;
+  margin: 65px 0 0 20px;
   color: #237caf;
   font-size: 40px;
   text-align: center;
@@ -28,7 +28,7 @@ main {
 
 main > div {
   height: 650px;
-  margin-right: 8%;
+  margin-right: 6%;
 }
 
 .img-container {
@@ -46,11 +46,16 @@ main > div {
   border: 2px solid #237caf;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #f0f6fe;
 }
 
+.show-img  img{
+  border-bottom: 0;
+}
+
 .show-img p {
+  margin-top: 0;
   margin-left: 20px;
   font-size: x-large;
 }
