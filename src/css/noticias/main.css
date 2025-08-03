@@ -1,0 +1,126 @@
+/* Sections da main */
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin: 80px;
+}
+
+/* Informações da UFES */
+.imagem_ufes {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 20%;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.texto_item {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.ufes_conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.info_ufes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.texto_ufes {
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info_ufes h3 {
+  margin: 0;
+}
+
+.info_ufes a {
+  color: blue;
+}
+
+.cardapio {
+  border-radius: 10px;
+  width: 390px;
+}
+
+/* Previsão do tempo */
+.secao-previsao {
+    display: flex;
+    justify-content: center;
+}
+
+.previsao {
+    width: 80%;
+    filter: drop-shadow(0 0 5px black);
+    border-radius: 10px;
+}
+
+/* Prioridades */
+.prioridades-container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin:auto;
+}
+
+.lista-contato {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lista-contato li {
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(255, 255, 255);
+
+    width: 300px;
+    padding: 10px;
+
+    align-items: center;
+}
+
+.lista-contato li .name {
+    font-weight: bold;
+}
+
+.lista-contato li .tel {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.promocoes_semanal {
+    font-size: 1.5rem;
+}
+
+.promocao {
+    height: 60vh;
+    border-radius: 10px;
+}

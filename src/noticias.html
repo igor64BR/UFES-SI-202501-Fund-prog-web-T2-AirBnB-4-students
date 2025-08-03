@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>notícias</title>
+
+    <link rel="stylesheet" href="./css/globals.css" />
+    <link rel="stylesheet" href="./css/listagem/header.css" />
+    <link rel="stylesheet" href="./css/noticias/header.css" />
+    <link rel="stylesheet" href="./css/noticias/main.css" />
+    <link rel="stylesheet" href="./css/listagem/footer.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/img/logo-low-res.jpg" alt="Logo" />
+      </div>
+      <nav>
+        <a href="#ufes">UFES</a>
+        <a href="#previsaodotempo">Previsão do Tempo</a>
+        <a href="#prioridades">Prioridades</a>
+      </nav>
+      <div class="opcoes-usuario">
+        <a href="#" class="item">Anunciar</a>
+        <a
+          class="badge-circular item"
+          href="contato.html"
+          title="Link para aba de contato"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chat-left-dots-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+            />
+          </svg>
+        </a>
+        <a
+          class="badge-circular item"
+          href="noticias.html"
+          title="Link para aba de notícias"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-newspaper"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+            />
+            <path
+              d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <img
+      src="./assets/img/noticias/Faculdade.jpg"
+      alt="Imagem da UFES"
+      class="imagem_ufes"
+    />
+
+    <main>
+      <!-- UFES -->
+      <section id="ufes" class="conteudo">
+        <a href="noticias.html" class="texto_item">UFES</a>
+
+        <section class="ufes_conteiner">
+          <div class="info_ufes">
+            <div class="texto_ufes">
+              <h3>Portal do Aluno</h3>
+              <p>
+                Acesse o portal do aluno da sua instituição aqui, para encontrar
+                suas notas, frequências e documentos oficiais.
+              </p>
+              <a href="https://portalaluno.ufes.br">portalaluno.ufes.br</a>
+            </div>
+            <div class="texto_ufes">
+              <h3>Calendário Acadêmico</h3>
+              <p>
+                Acesse o calendário acadêmico e acompanhe os prazos, datas
+                festivas e planejamentos das entregas de atividades.
+              </p>
+              <a href="https://prograd.ufes.br">prograd.ufes.br</a>
+            </div>
+            <div class="texto_ufes">
+              <h3>Auxílio Estudantil</h3>
+              <p>Verifique aqui o estado do seu auxílio estudantil</p>
+              <a href="https://proaes.ufes.br">proaes.ufes.br</a>
+            </div>
+          </div>
+          <img
+            src="assets/img/noticias/cardapio_ru.png"
+            alt="Cardápio RU"
+            class="cardapio"
+          />
+        </section>
+      </section>
+
+      <!-- PREVISÃO DO TEMPO -->
+      <section id="previsaodotempo" class="conteudo">
+        <a href="noticias.html" class="texto_item">PREVISÃO DO TEMPO</a>
+        <section class="secao-previsao">
+          <img
+            src="assets/img/noticias/previsao_tempo.png"
+            class="previsao"
+            alt="Previsão do Tempo"
+          />
+        </section>
+      </section>
+
+      <!-- PRIORIDADES -->
+      <section id="prioridades" class="conteudo">
+        <a href="noticias.html" class="texto_item">PRIORIDADES</a>
+
+        <div class="prioridades-container">
+          <section class="servicos">
+            <div class="info_prioridades">
+              <div class="farmacia">
+                <h4>Farmácia:</h4>
+                <ul class="lista-contato">
+                  <li>
+                    <span class="name">Farmácia Vida Alegre</span>
+                    <span>
+                      Bairro: Centro – Tel:
+                      <span class="tel">(28) 3456-1010</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Drogaria São Lucas</span>
+                    <span>
+                      Bairro: Vila do Sul – Tel:
+                      <span class="tel">(28) 3456-2020</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Farmavita Popular</span>
+                    <span>
+                      Bairro: Nova Alegre – Tel:
+                      <span class="tel">(28) 3456-3030</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">FarmaPlus Saúde</span>
+                    <span>
+                      Bairro: Vila Alta – Tel:
+                      <span class="tel">(28) 3456-4040</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Drogaria Bem-Estar</span>
+                    <span>
+                      Bairro: Caverá – Tel:
+                      <span class="tel">(28) 3456-5050</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Farmácia União</span>
+                    <span>
+                      Bairro: Guararema – Tel:
+                      <span class="tel">(28) 3456-6060</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Drogaria Central de Alegre</span>
+                    <span>
+                      Bairro: Centro – Tel:
+                      <span class="tel">(28) 3456-7070</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">FarmaVida 24h</span>
+                    <span>
+                      Bairro: Planalto – Tel:
+                      <span class="tel">(28) 3456-8080</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="gas">
+                <h4>Gás:</h4>
+                <ul class="lista-contato">
+                  <li>
+                    <span class="name">Gás & Cia Alegre</span>
+                    <span>
+                      Bairro: Caverá – Tel:
+                      <span class="tel">(28) 3456-9090</span>
+                    </span>
+                  </li>
+                  <li>
+                    <span class="name">Distribuidora Gás Fácil</span>
+                    <span>
+                      Bairro: Nova Alegre – Tel:
+                      <span class="tel">(28) 3456-9090</span>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="promocoes_semanal">
+            <img
+              src="assets/img/noticias/promocoes.png"
+              class="promocao"
+              alt="Promoções da Semana"
+            />
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Desenvolvido por
+        <span>Igor Baiocco</span>, <span>Daniel José</span>,
+        <span>Gabriel Verner</span> - SI UFES 2025
+      </p>
+    </footer>
+  </body>
+</html>

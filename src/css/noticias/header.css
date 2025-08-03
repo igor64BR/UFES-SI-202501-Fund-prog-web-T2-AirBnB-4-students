@@ -1,0 +1,6 @@
+header > nav {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
