@@ -4,18 +4,19 @@ header {
     align-items: center;
     background-color: #1d6a96;
     color: white;
-    padding-top: 8px;
+    padding-top: 0.08em;
     
     position: fixed;
     top: 0;
     width: 100%;
+    height: 8%;
     z-index: 1;
     float: left;
 }
 
 .logo img {
-    height: 50px;
-    margin-left: 20px;
+    height: 2.5em;
+    margin-left: 1.5em;
 }
 
 .opcoes-usuario {
