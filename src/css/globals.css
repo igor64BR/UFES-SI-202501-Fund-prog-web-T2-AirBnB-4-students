@@ -13,16 +13,16 @@ a {
 .button {
     background-color: #1d6a96;
     border: 1px solid #1d6a96;
-    border-radius: 5px;
+    border-radius: 0.4rem;
     font-size: 1rem;
     padding: .8rem 3.4rem;
 
     border-radius: 2rem;
     box-shadow: 
-        1px 1px 5px rgba(0, 0, 0, .5),
-        -1px -1px 5px #2a9cdd,
-        inset 1px 1px 5px rgba(0, 0, 0, .8),
-        inset -1px -1px 5px #2a9cdd;
+        0.1rem 0.1rem 0.4rem rgba(0, 0, 0, .5),
+        -0.1rem -0.1rem 0.4rem #2a9cdd,
+        inset 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, .8),
+        inset -0.1rem -0.1rem 0.4rem #2a9cdd;
 
     
     transition: .1s ease-in-out;
