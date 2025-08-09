@@ -1,0 +1,42 @@
+@import url(./globals.css);
+
+/* 
+*Feito para o componente abaixo de footer:*
+<footer>
+    <p>
+    Desenvolvido por
+    <span class="names">
+        <span>Igor Baiocco</span>
+        <span>Daniel José</span>
+        <span>Gabriel Verner</span>
+    </span>
+    SI UFES 2025
+    </p>
+</footer> 
+*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: fit-content;
+  padding: 0.3rem;
+
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+
+  font-size: 1rem;
+  text-align: center;
+}
+
+.names span:not(:last-child)::after {
+  content: ", ";
+}
+
+@media screen and (max-width: 560px) {
+    .names {
+        display: block;
+        margin: 0.1rem;
+        font-weight: bold;
+    }
+}
