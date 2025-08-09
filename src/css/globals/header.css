@@ -134,6 +134,8 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+
+  color: var(--secondary-color);
 }
 
 .logo,
