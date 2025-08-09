@@ -36,6 +36,7 @@ main {
   justify-content: space-between;
   text-align: center;
   width: 80%;
+  margin-left: 0.6rem;
 }
 
 .show-img {
@@ -127,4 +128,28 @@ main {
 .distancia {
   text-align: center;
   font-size: 0.8rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  z-index: 1;
+  padding: 0.2rem;
+  
+
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+label{
+  height: 100%;
 }
