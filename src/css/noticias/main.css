@@ -1,5 +1,10 @@
+header {
+  z-index: 1;
+}
+
 /* Sections da main */
 main {
+  color: black;
   position: relative;
   display: flex;
   flex-direction: column;

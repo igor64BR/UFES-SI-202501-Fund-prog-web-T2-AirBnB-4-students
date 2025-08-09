@@ -1,406 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lar Universitário</title>
 
-    <link rel="stylesheet" href="../css/globals.css">
-    <link rel="stylesheet" href="../css/listagem/index.css">
-    <link rel="stylesheet" href="../css/listagem/header.css">
-    <link rel="stylesheet" href="../css/listagem/main.css">
-    <link rel="stylesheet" href="../css/listagem/footer.css">
-    <link rel="stylesheet" href="../css/listagem/width-lt-1000px.css">
-    <link rel="stylesheet" href="../css/listagem-filtros/filtro-apartamento-selected.css">
-</head>
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../css/globals/header.css" />
+    <link rel="stylesheet" href="../css/globals/footer.css" />
 
-<body>
+    <link rel="stylesheet" href="../css/listagem/index.css" />
+    <link rel="stylesheet" href="../css/listagem/main.css" />
+    <link rel="stylesheet" href="../css/listagem/width-lt-1000px.css" />
+    <link
+      rel="stylesheet"
+      href="../css/listagem-filtros/filtro-apartamento-selected.css"
+    />
+  </head>
+
+  <body>
     <header>
-        <div class="logo">
-            <img src="../assets/img/logo-low-res.jpg" alt="Logo">
+      <div class="logo">
+        <img src="../assets/img/logo-low-res.jpg" alt="Logo" />
+      </div>
+      <nav id="filtro-opcao-moradia" class="opcao-moradia-container">
+        <div class="opcao-moradia" id="filtro-todos">
+          <a href="./listagem.html">
+            <!-- <img src="./assets/img/cidade.png" alt="Todos" /> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-funnel-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"
+              />
+            </svg>
+            <span>Todos</span>
+          </a>
         </div>
-        <nav>
-            <div id="filtro-opcao-moradia" class="opcao-moradia-container">
-                <div id="filtro-opcao-moradia" class="opcao-moradia-container">
-                    <div class="opcao-moradia" id="filtro-todos">
-                        <a href="../listagem.html">
-                            <img src="../assets/img/cidade.png" alt="Todos">
-                            <span>Todos</span>
-                        </a>
-                    </div>
 
-                    <div class="opcao-moradia" id="filtro-apartamento">
-                        <a href="../filtros/apartamento.html">
-                            <img src="../assets/img/apartamento.jpg" alt="Apartamentos">
-                            <span>Apartamentos</span>
-                        </a>
-                    </div>
-
-                    <div class="opcao-moradia" id="filtro-casa">
-                        <a href="../filtros/casa.html">
-                            <img src="../assets/img/casa.png" alt="Casas">
-                            <span>Casas</span>
-                        </a>
-                    </div>
-
-                    <div class="opcao-moradia" id="filtro-republica">
-                        <a href="../filtros/republica.html">
-                            <img src="../assets/img/sitio.jpg" alt="Repúblicas">
-                            <span>Repúblicas</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="opcoes-usuario">
-            <a href="#" class="item">Anunciar</a>
-            <a class="badge-circular item" href="../contato.html" title="Link para aba de contato">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-chat-left-dots-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
-                </svg>
-            </a>
-            <a class="badge-circular item" href="../noticias.html" title="Link para aba de notícias">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-newspaper" viewBox="0 0 16 16">
-                    <path
-                        d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z" />
-                    <path
-                        d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z" />
-                </svg>
-            </a>
+        <div class="opcao-moradia" id="filtro-apartamento">
+          <a href="./filtros/apartamento.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-building-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 0a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h3v-3.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V16h3a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1zm1 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5M4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5m2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"
+              />
+            </svg>
+            <span>Apartamentos</span>
+          </a>
         </div>
+
+        <div class="opcao-moradia" id="filtro-casa">
+          <a href="./filtros/casa.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-house-door-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"
+              />
+            </svg>
+            <span>Casas</span>
+          </a>
+        </div>
+
+        <div class="opcao-moradia" id="filtro-republica">
+          <a href="./filtros/republica.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-people-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+              />
+            </svg>
+            <span>Repúblicas</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="opcoes-usuario">
+        <a href="#" class="item">Anunciar</a>
+        <a
+          class="badge-circular item"
+          href="contato.html"
+          title="Link para aba de contato"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-chat-left-dots-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm5 4a1 1 0 1 0-2 0 1 1 0 0 0 2 0m4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+            />
+          </svg>
+        </a>
+        <a
+          class="badge-circular item"
+          href="noticias.html"
+          title="Link para aba de notícias"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-newspaper"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+            />
+            <path
+              d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+            />
+          </svg>
+        </a>
+      </div>
     </header>
     <main>
-        <section class="recomendacao-moradia">
-            <h2>Melhores Avaliações</h2>
-            <div id="melhores-avaliacoes" class="anuncio-container">
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
+      <section class="recomendacao-moradia">
+        <h2>Melhores Avaliações</h2>
+        <div id="melhores-avaliacoes" class="anuncio-container">
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
             </div>
-        </section>
-        <hr>
-        <section class="recomendacao-moradia">
-            <h2>Mais próximos da faculdade</h2>
-            <div id="mais-proximos-ufes" class="anuncio-container">
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
             </div>
-        </section>
-        <hr>
-        <section class="recomendacao-moradia">
-            <h2>Custo-Benefício</h2>
-            <div id="mais-baratos" class="anuncio-container">
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 1">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Centro</p>
-                    <span>R$1500 por mês - ⭐4.8</span>
-                </div>
-                <div class="anuncio">
-                    <div class="anuncio-imagem" style="background-image: url('../assets/img/apartamento.jpg')">
-                        <span class="favorite" style="opacity: 0">Preferido</span>
-                        <div class="heart-container">
-                            <svg class="heart heart-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"></path>
-                            </svg>
-                            <svg class="heart heart-outline" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <p>apartamento em Bilau</p>
-                    <span>R$1800 por mês - ⭐4.7</span>
-                </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
             </div>
-        </section>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="recomendacao-moradia">
+        <h2>Mais próximos da faculdade</h2>
+        <div id="mais-proximos-ufes" class="anuncio-container">
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="recomendacao-moradia">
+        <h2>Custo-Benefício</h2>
+        <div id="mais-baratos" class="anuncio-container">
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 1">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Centro</p>
+            <span>R$1500 por mês - ⭐4.8</span>
+          </div>
+          <div class="anuncio">
+            <div
+              class="anuncio-imagem"
+              style="background-image: url('../assets/img/apartamento.jpg')"
+            >
+              <span class="favorite" style="opacity: 0">Preferido</span>
+              <div class="heart-container">
+                <svg
+                  class="heart heart-fill"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+                  ></path>
+                </svg>
+                <svg
+                  class="heart heart-outline"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p>apartamento em Bilau</p>
+            <span>R$1800 por mês - ⭐4.7</span>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p>
-            Desenvolvido por
-            <span>Igor Baiocco</span>,
-            <span>Daniel José</span>,
-            <span>Gabriel Verner</span>
-            - SI UFES 2025
-        </p>
+      <p>
+        Desenvolvido por
+        <span>Igor Baiocco</span>, <span>Daniel José</span>,
+        <span>Gabriel Verner</span>
+        - SI UFES 2025
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
