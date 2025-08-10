@@ -1,0 +1,47 @@
+@media (max-width: 1000px) {
+  .opcao-moradia span {
+    display: none;
+  }
+
+  .anuncio > .anuncio-imagem {
+    height: 100px;
+    width: 100px;
+  }
+
+  .imagem_ufes {
+    background-size: cover;
+    height: 100%;
+  }
+
+  /* UFES */
+
+  .ufes_conteiner {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ufes_conteiner > .info_ufes {
+    width: 100%;
+  }
+
+  .ufes_conteiner > img {
+    margin-top: 1em;
+  }
+
+  /* PREVISAO DO TEMPO */
+
+  /* PRIORIDADES */
+
+  .lista-contato {
+    justify-content: center;
+
+  }
+
+  .prioridades-container {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+}
