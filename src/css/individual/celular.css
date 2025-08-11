@@ -143,7 +143,7 @@ main {
   padding: 0.2rem;
   
 
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
 label{
@@ -170,4 +170,23 @@ footer {
 
 footer span {
     text-decoration: underline;
+}
+
+/* <!-- --- Tablets - Vertical --- --> */
+
+@media screen and (orientation: portrait) and (max-device-width: 1366px) and (min-device-width: 768px){
+
+body>h1 {
+  margin: 7% 0 1.5% 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5rem;
+  margin-right: 2%;
+  text-align: center;
+  width: 100%;
+}
+
 }
