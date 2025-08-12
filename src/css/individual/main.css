@@ -1,8 +1,7 @@
 body {
   font-size: 20px;
-  margin: 0em;
+  margin: 0;
   background-color: #f5f5f5;
-  height: 88%;
 }
 
 #star-ico {
@@ -11,7 +10,7 @@ body {
 }
 
 body>h1 {
-  margin: 2em 0 0 0;
+  margin: 4.3% 0 0 0;
   color: #237caf;
   font-size: 2rem;
   text-align: center;
@@ -19,19 +18,19 @@ body>h1 {
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   width: 100%;
   height: 100%;
-  margin-top: 1rem;
+  margin-top: 0;
 
   box-sizing: border-box;
 }
 
 .img-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 1.5rem;
   height: 36rem;
   margin-right: 6%;
@@ -55,7 +54,7 @@ main {
 }
 
 .show-img p {
-  margin-top: 0;
+  margin-top: 0.5rem;
   margin-left: 1rem;
   font-size: x-large;
 }
@@ -65,15 +64,105 @@ main {
 }
 
 .img-republica {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   border-radius: 0.5rem;
 }
 
-.show-img img:active {
+form{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox:checked ~ label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-49.5%, -50%) scale(0.7);
+  z-index: 1;
+  padding: 0.2rem;
+  
+  height: 500rem;
+  width: 600rem;
+  background-color: rgba(0, 0, 0, 0.98);
 }
 
+@media screen and (max-width: 768px) {
+
+  body{
+    height: 100vh;
+  }
+
+}
+
+/* <!-- --- Tablets - Vertical --- --> */
+
+@media screen and (orientation: portrait) and (max-device-width: 1366px) and (min-device-width: 1024px){
+  
+body>h1 {
+  margin: 10% 0 4% 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
+
+.img-container {
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+  height: 26rem;
+}
+
+}
+
+@media screen and (orientation: portrait) and (max-device-width: 1023px) and (min-device-width: 768px){
+  
+body>h1 {
+  margin-top: 8.5%;
+  margin-bottom: 2%;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 76%;
+  margin-top: 0;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.img-container {
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+  height: 20rem;
+}
+
+.img-container p {
+  font-size: 1.4rem;
+}
+
+}
