@@ -1,101 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(../globals/globals.css);
 
-* {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: white;
-}
-
-html, body, main {
-    height: 100%;
-}
+/* =====================================
+   BASE LAYOUT & BODY STYLES
+   ===================================== */
 
 body {
-    background-color: #1d6a96;
+  background-color: var(--primary-color);
+  padding: 2rem;
 }
 
-.flex-center {
+main {
+  color: var(--secondary-color);
+}
+
+/* =====================================
+   HEADER SECTION
+   ===================================== */
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+}
+
+.button.go-back {
+  margin: 0;
+  height: 2rem;
+  aspect-ratio: 1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.2;
+}
+
+/* =====================================
+   FORM STRUCTURE
+   ===================================== */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fields-container,
+.fields-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =====================================
+   INPUT COMPONENTS
+   ===================================== */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  border: 0;
+  outline: none;
+}
+
+/* Radio button specific styling */
+.radio > div {
+  display: flex;
+  gap: 1rem;
+}
+
+/* =====================================
+   BUTTON COMPONENTS
+   ===================================== */
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-container button {
+  margin: 0;
+  padding: 0;
+  width: 8rem;
+  aspect-ratio: 3;
+  color: var(--secondary-color);
+}
+
+/* =====================================
+   RESPONSIVE DESIGN - TABLET & DESKTOP
+   ===================================== */
+
+@media screen and (min-width: 480px) {
+  /* Body & Main Layout */
+  body {
+    padding: 0;
+  }
+
+  main {
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+  }
 
-.corpo-cadastro {
-    flex-direction: column;
-    padding: 2rem 3rem;
-
-    border-radius: 3rem;
-
-    box-shadow: 
-        3px 3px 15px rgba(0, 0, 0, .5), 
-        -3px -3px 15px #2997d6;
-
-    position: relative;
-}
-
-.button:not(:last-child) {
-    margin-right: 1rem;
-}
-
-.go-back {
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-
-    text-decoration: none;
-    font-size: 2rem;
-    text-align: center;
-    
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0;
-}
-
-.corpo-cadastro>h1 {
-    margin-bottom: 2rem;
-    display: block;
-    width: 80%;
-    text-align: center;
-}
-
-form {
-    width: 70%;
-    flex-direction: column;
-}
-
-form>div {
-    display: flex;
-    flex-direction: column;
+  /* Form Container */
+  .corpo-cadastro {
     width: 100%;
-    margin-bottom: 1rem;
-}
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3),
+      -0.2rem -0.2rem 0.5rem color-mix(in srgb, var(--primary-color) 80%, white);
+  }
 
-form label {
-    font-weight: bold;
-    padding-left: 8px;
-    margin-bottom: 5px;
-}
-
-.sub-label {
-    font-size: x-small;
-    display: block;
-    font-weight: normal;
-}
-
-form input, form textarea {
-    border-radius: 8px;
-    padding: 5px 13px;
-    color: black;
-}
-
-.button-container {
+  /* Fields Layout - Side by Side */
+  .fields-container {
+    display: flex;
     flex-direction: row;
-}
+    flex-wrap: wrap;
+  }
 
-p {
-    font-weight: bold;
-    padding-left: 8px;
-    margin-bottom: 5px;
-    text-align: center;
+  .fields-container > div {
+    flex: 1 1 auto;
+  }
+
+  /* Button Adjustments */
+  .button-container button {
+    width: 13rem;
+  }
 }
