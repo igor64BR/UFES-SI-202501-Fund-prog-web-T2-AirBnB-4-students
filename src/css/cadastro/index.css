@@ -33,15 +33,16 @@ main{
 .colunas{
     border-radius: 3rem;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 
     box-shadow: 
         3px 3px 15px rgba(0, 0, 0, .5), 
         -3px -3px 15px #2997d6;
     
-    width: 70%;
-    padding: 0.3rem 2rem;
+    height: 80%;
+    max-width: 80%;
+    padding: 1rem 2rem;
     
 }
 
@@ -99,9 +100,11 @@ form {
 
 form>div {
     display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-bottom: 1rem;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 form label {
@@ -115,11 +118,12 @@ form label {
     font-size: x-small;
     display: block;
     font-weight: normal;
+    margin-bottom: 5px;
 }
 
 form input, form textarea {
     border-radius: 8px;
-    padding: 5px 13px;
+    padding: 0.2rem 4rem;
     color: black;
 }
 
