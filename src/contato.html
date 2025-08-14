@@ -10,29 +10,31 @@
 </head>
 
 <body>
-    <main class="flex-center">
-        <div class="corpo-cadastro flex-center">
-            <a class="button flex-center go-back" href="listagem.html">&lt;</a>
-            <h1>Envie um e-mail para nosso time!</h1>
-            <form class="flex-center" method="post" enctype="text/plain" action="mailto:admin-T2-DGI@edu.ufes.br">
-                <div>
+    <main>
+        <div class="corpo-cadastro">
+            <header>
+                <a class="button  go-back" href="listagem.html">&lt;</a>
+                <h1>Envie um e-mail para nosso time!</h1>
+            </header>
+            <form method="post" enctype="text/plain" action="mailto:admin-T2-DGI@edu.ufes.br">
+                <div class="input-container">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="Insira aqui o seu e-mail" required>
                 </div>
-                <div>
+                <div class="input-container">
                     <label for="assunto">Assunto:</label>
                     <input type="text" name="assunto" id="assunto" placeholder="Insira aqui o assunto do contato"
                         required>
                 </div>
-                <div>
+                <div class="input-container">
                     <label for="mensagem">
                         Mensagem:
-                        <span class="sub-label">(Mínimo de 30 letras)</span>
+                        <span>(Mínimo de 30 letras)</span>
                     </label>
                     <textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" required
                         minlength="30"></textarea>
                 </div>
-                <div class="flex-center button-container">
+                <div class="button-container">
                     <button class="button" type="reset">Limpar</button>
                     <button class="button" type="submit">Enviar</button>
                 </div>

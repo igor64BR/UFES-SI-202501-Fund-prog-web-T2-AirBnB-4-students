@@ -77,6 +77,11 @@ textarea {
   gap: 1rem;
 }
 
+.radio-option {
+  display: flex;
+  gap: 0.1rem;
+}
+
 /* =====================================
    BUTTON COMPONENTS
    ===================================== */

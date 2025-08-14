@@ -3,10 +3,13 @@
 /* =====================================
    BASE LAYOUT & BODY STYLES
    ===================================== */
-
 body {
   background-color: var(--primary-color);
   padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -44,13 +47,6 @@ form {
   gap: 2rem;
 }
 
-.fields-container,
-.fields-container > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
 /* =====================================
    INPUT COMPONENTS
    ===================================== */
@@ -69,12 +65,6 @@ textarea {
   font-family: "Roboto";
   border: 0;
   outline: none;
-}
-
-/* Radio button specific styling */
-.radio > div {
-  display: flex;
-  gap: 1rem;
 }
 
 /* =====================================
@@ -121,17 +111,6 @@ textarea {
     border-radius: 2rem;
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3),
       -0.2rem -0.2rem 0.5rem color-mix(in srgb, var(--primary-color) 80%, white);
-  }
-
-  /* Fields Layout - Side by Side */
-  .fields-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .fields-container > div {
-    flex: 1 1 auto;
   }
 
   /* Button Adjustments */
