@@ -1,16 +1,21 @@
 @import url(../globals/globals.css);
 
-.button.go-back {
-  margin: 0;
-  height: 2rem;
-  aspect-ratio: 1;
-  padding: 0;
+/* =====================================
+   BASE LAYOUT & BODY STYLES
+   ===================================== */
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scale: 1.2;
+body {
+  background-color: var(--primary-color);
+  padding: 2rem;
 }
+
+main {
+  color: var(--secondary-color);
+}
+
+/* =====================================
+   HEADER SECTION
+   ===================================== */
 
 header {
   display: flex;
@@ -18,19 +23,41 @@ header {
   gap: 1.3rem;
 }
 
-main {
-  color: var(--secondary-color);
+.button.go-back {
+  margin: 0;
+  height: 2rem;
+  aspect-ratio: 1;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.2;
 }
 
-body {
-  background-color: var(--primary-color);
-  padding: 2rem;
-}
+/* =====================================
+   FORM STRUCTURE
+   ===================================== */
 
 form {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.fields-container,
+.fields-container > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =====================================
+   INPUT COMPONENTS
+   ===================================== */
+
+.input-container {
+  display: flex;
+  flex-direction: column;
 }
 
 input,
@@ -44,22 +71,15 @@ textarea {
   outline: none;
 }
 
-.fields-container,
-.fields-container > div {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.input-container {
-  display: flex;
-  flex-direction: column;
-}
-
+/* Radio button specific styling */
 .radio > div {
   display: flex;
   gap: 1rem;
 }
+
+/* =====================================
+   BUTTON COMPONENTS
+   ===================================== */
 
 .button-container {
   display: flex;
@@ -74,7 +94,12 @@ textarea {
   color: var(--secondary-color);
 }
 
+/* =====================================
+   RESPONSIVE DESIGN - TABLET & DESKTOP
+   ===================================== */
+
 @media screen and (min-width: 480px) {
+  /* Body & Main Layout */
   body {
     padding: 0;
   }
@@ -86,23 +111,19 @@ textarea {
     align-items: center;
     width: 90%;
     margin: auto;
-
     padding: 2rem 0 2rem 0;
   }
 
+  /* Form Container */
   .corpo-cadastro {
     width: 100%;
     padding: 2rem;
-
     border-radius: 2rem;
     box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3),
       -0.2rem -0.2rem 0.5rem color-mix(in srgb, var(--primary-color) 80%, white);
   }
 
-  .button-container button {
-    width: 13rem;
-  }
-
+  /* Fields Layout - Side by Side */
   .fields-container {
     display: flex;
     flex-direction: row;
@@ -111,5 +132,10 @@ textarea {
 
   .fields-container > div {
     flex: 1 1 auto;
+  }
+
+  /* Button Adjustments */
+  .button-container button {
+    width: 13rem;
   }
 }
